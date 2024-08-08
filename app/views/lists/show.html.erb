@@ -9,7 +9,7 @@
     <% @list.bookmarks.each do |bookmark| %>
       <li>
         <div class="card-product">
-          <img src='https://loremflickr.com/320/240/<%=bookmark.movie.title%>'>
+          <img src='<%=bookmark.movie.poster_url%>'>
           <div class="card-product-infos">
             <h2>comment:</h2>
             <p><%= bookmark.comment %></p>
